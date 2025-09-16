@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SDG 17 — Partnership for the Goals</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      color: #222;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #0f172a;
+      padding: 14px 24px;
+      position: sticky;
+      top: 0;
+    }
+    nav .logo {
+      font-weight: bold;
+      font-size: 20px;
+      color: #fff;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+    }
+    header.hero {
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1508780709619-79562169bc64') center/cover no-repeat;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    header.hero h1 {font-size: 48px; margin: 0;}
+    header.hero p {max-width: 600px;}
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    /* About */
+    .about {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+    .about img {width: 50%; border-radius: 12px;}
+    .about .text {flex: 1;}
+
+    /* Services */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px,1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .card img {width: 100%; height: 160px; object-fit: cover;}
+    .card .content {padding: 16px;}
+
+    /* Forms */
+    form {
+      max-width: 400px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    form input, form textarea, form select {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    form button {
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      background: #0f172a;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    footer {text-align: center; padding: 20px; background: #0f172a; color: #fff;}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">SDG Goals</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#login">Login</a></li>
+      <li><a href="#register">Register</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header id="home" class="hero">
+    <h1>Partnership for the Goals</h1>
+    <p>Together we can achieve the Sustainable Development Goals by 2030.</p>
+  </header>
+
+  <section id="about">
+    <div class="about">
+      <img src="./images/about.jpg" alt="Partnership">
+      <div class="text">
+        <h2>About Us</h2>
+        <p>Goal 17 is about revitalizing the global partnership for sustainable development. The 2030 Agenda is universal and calls for action by all countries – developed and developing – to ensure no one is left behind. It requires partnerships between governments, the private sector, and civil society.
+
+The Sustainable Development Goals can only be realized with a strong commitment to global partnership and cooperation to ensure no one is left behind in our journey to development.
+
+However, not all countries are setting off from the same start line, and low and middle income countries are facing a tidal wave of debt which they are treading water.</p>
+      </div>
+    </div>
+  </section>
+    <!--services    -->
+  <section id="services">
+    <h2 style="text-align:center;">All 17 SDGs</h2>
+    <div class="services">
+      <!-- Repeat for all 17 goals -->
+      <div class="card">
+         <a href="goal1.html">
+        <img src="./images/sdg1.png" alt="No Poverty">
+        <div class="content">
+          <h3>No Poverty</h3>
+          <p>End poverty in all its forms everywhere.</p>
+        </div>
+        </a>
+      </div>
+      <div class="card">
+          <a href="goal2.html">
+        <img src="./images/sdg2.jpg" alt="Zero Hunger">
+        <div class="content">
+          <h3>Zero Hunger</h3>
+          <p>End hunger, achieve food security and improved nutrition.</p>
+        </div>
+        </a>
+      </div>
+      <div class="card">
+          <a href="goal3.html">
+        <img src="./images/sdg3.jpg" alt="No Poverty">
+        <div class="content">
+          <h3>Good Health and Well-being</h3>
+          <p>Ensure healthy lives and promote well-being for all at all ages.</p>
+        </div>
+        </a>
+      </div>
+      <div class="card">
+          <a href="goal4.html">
+        <img src="./images/sdg4.png" alt="No Poverty">
+        <div class="content">
+          <h3>Quality Education</h3>
+          <p>Ensure inclusive, equitable, and quality education and lifelong learning opportunities for all.</p>
+        </div>
+        </a>
+      </div>
+      <div class="card">
+          <a href="goal5.html">
+        <img src="./images/sdg5.jpg" alt="No Poverty">
+        <div class="content">
+          <h3>Gender Equality</h3>
+          <p>Achieve gender equality and empower all women and girls.</p>
+        </div>
+        </a>
+      </div>
+      <div class="card">
+          <a href="goal6.html">
+        <img src="./images/sdg6.png" alt="No Poverty">
+        <div class="content">
+          <h3>Clean Water and Sanitation</h3>
+          <p>Ensure availability and sustainable management of water and sanitation for all.</p>
+        </div>
+        </a>
+      </div>
+      <div class="card">
+          <a href="goal7.html">
+        <img src="./images/sdg7.png" alt="No Poverty">
+        <div class="content">
+          <h3>Affordable and Clean Energy</h3>
+          <p>Ensure access to affordable, reliable, sustainable, and modern energy for all.</p>
+        </div>
+        </a>
+      </div>
+      <div class="card">
+          <a href="goal8.html">
+        <img src="./images/sdg8.png" alt="No Poverty">
+        <div class="content">
+          <h3>Decent Work and Economic Growth</h3>
+          <p>Promote sustained, inclusive economic growth, full employment, and decent work for all.</p>
+        </div>
+        </a>
+      </div>
+      <div class="card">
+          <a href="goal9.html">
+        <img src="./images/sdg9.png" alt="No Poverty">
+        <div class="content">
+          <h3>Industry, Innovation and Infrastructure</h3>
+          <p>Build resilient infrastructure, promote sustainable industrialization, and foster innovation.</p>
+        </div>
+        </a>
+      </div>
+      <div class="card">
+          <a href="goal10.html">
+        <img src="./images/sdg10.jpg" alt="No Poverty">
+        <div class="content">
+          <h3>Reduced Inequalities</h3>
+          <p>Reduce inequality within and among countries.</p>
+        </div>
+        </a>
+      </div>
+      <div class="card">
+          <a href="goal11.html">
+        <img src="./images/sdg11.png" alt="No Poverty">
+        <div class="content">
+          <h3>Sustainable Cities and Communities</h3>
+          <p>Make cities and human settlements inclusive, safe, resilient, and sustainable.</p>
+        </div>
+        </a>
+      </div>
+      <div class="card">
+          <a href="goal2.html">
+        <img src="./images/sdg12.jpg" alt="No Poverty">
+        <div class="content">
+          <h3>Responsible Consumption and Production</h3>
+          <p>Ensure sustainable consumption and production patterns.</p>
+        </div>
+        </a>
+      </div>
+      <div class="card">
+          <a href="goal13.html">
+        <img src="./images/sdg13.jpg" alt="No Poverty">
+        <div class="content">
+          <h3>Climate Action</h3>
+          <p>Take urgent action to combat climate change and its impacts.</p>
+        </div>
+        </a>
+      </div>
+      <div class="card">
+          <a href="goal14.html">
+        <img src="./images/sdg14.png" alt="No Poverty">
+        <div class="content">
+          <h3>Life Below Water</h3>
+          <p>Conserve and sustainably use oceans, seas, and marine resources.</p>
+        </div>
+        </a>
+      </div>
+      <div class="card">
+          <a href="goal15.html">
+        <img src="./images/sdg15.png" alt="No Poverty">
+        <div class="content">
+          <h3>Life on Land</h3>
+          <p>Protect, restore, and promote sustainable use of terrestrial ecosystems and biodiversity.</p>
+        </div>
+        </a>
+      </div>
+      <div class="card">
+          <a href="goal16.html">
+        <img src="./images/sdg6.png" alt="No Poverty">
+        <div class="content">
+          <h3>Peace, Justice and Strong Institutions</h3>
+          <p>Promote peaceful, inclusive societies, provide access to justice, and build effective institutions.</p>
+        </div>
+        </a>
+      </div>
+      <div class="card">
+          <a href="goal17.html">
+        <img src="./images/sdg17.png" alt="No Poverty">
+        <div class="content">
+          <h3>Partnerships for the Goals</h3>
+          <p>Strengthen global partnerships to support and achieve the Sustainable Development Goals.</p>
+        </div>
+          </a>
+      </div>
+      <!-- You can continue to add all 17 goals similarly -->
+    </div>
+  </section>
+  <!--services are ended here -->
+
+  <section id="login">
+    <h2 style="text-align:center;">Login</h2>
+    <form>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+  </section>
+
+  <section id="register">
+    <h2 style="text-align:center;">Register</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2 style="text-align:center;">Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Partnership for the Goals Project</p>
+  </footer>
+</body>
+</html>

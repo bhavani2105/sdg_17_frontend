@@ -79,6 +79,15 @@
     .card img {width: 100%; height: 160px; object-fit: cover;}
     .card .content {padding: 16px;}
 
+
+    .services .card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.services .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
     /* Forms */
     form {
       max-width: 400px;
@@ -112,8 +121,9 @@
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
+       <li><a href="#register">Register</a></li>
       <li><a href="#login">Login</a></li>
-      <li><a href="#register">Register</a></li>
+     
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -299,35 +309,41 @@ However, not all countries are setting off from the same start line, and low and
   </section>
   <!--services are ended here -->
 
-  <section id="login">
-    <h2 style="text-align:center;">Login</h2>
-    <form>
-      <input type="email" placeholder="Email" required>
-      <input type="password" placeholder="Password" required>
-      <button type="submit">Login</button>
-    </form>
-  </section>
+ <!--register page starting-->
 
-  <section id="register">
-    <h2 style="text-align:center;">Register</h2>
-    <form>
-      <input type="text" placeholder="Full Name" required>
-      <input type="email" placeholder="Email" required>
-      <input type="password" placeholder="Password" required>
-      <button type="submit">Register</button>
-    </form>
-  </section>
+<section id="register">
+  <h2 style="text-align:center;">Register</h2>
+  <form id="registerForm">
+    <input type="text" id="regName" placeholder="Full Name" required>
+    <input type="email" id="regEmail" placeholder="Email" required>
+    <input type="password" id="regPassword" placeholder="Password" required>
+    <button type="submit">Register</button>
+  </form>
+</section>
 
-  <section id="contact">
-    <h2 style="text-align:center;">Contact Us</h2>
-    <form>
-      <input type="text" placeholder="Name" required>
-      <input type="email" placeholder="Email" required>
-      <textarea placeholder="Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+<!-- Login Form -->
+<section id="login">
+  <h2 style="text-align:center;">Login</h2>
+  <form id="loginForm">
+    <input type="email" id="loginEmail" placeholder="Email" required>
+    <input type="password" id="loginPassword" placeholder="Password" required>
+    <button type="submit">Login</button>
+  </form>
+</section>
 
+<!-- Contact Form -->
+<section id="contact">
+  <h2 style="text-align:center;">Contact Us</h2>
+  <form id="contactForm">
+    <input type="text" id="contactName" placeholder="Name" required>
+    <input type="email" id="contactEmail" placeholder="Email" required>
+    <textarea id="contactMessage" placeholder="Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<!--contact page ending-->
+<script src="script.js"></script>
   <footer>
     <p>© 2025 Partnership for the Goals Project</p>
   </footer>
